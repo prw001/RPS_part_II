@@ -1,0 +1,74 @@
+<!DOCTYPE = html>
+<meta charset = "utf-8">
+<html>
+<title>Rock, Paper, Scissors!</title>
+<head>
+	<link type="text/css" rel="stylesheet" href="RPS_pt2.css">
+</head>
+<body>
+	<div id = "frame">
+		<h1 id="main-title"><i>Rock...<tab>Paper...<tab>Scissors!</i></h1>
+		<div class="zones" id="player-zone">
+			<h2 class="player-title">You</h2>
+			<div class = "hand-selection rock">
+				<button class="hand-pic player-pic" id="pick-rock">
+					rock
+					<img id="player-rock-pic" src="images/players_rock_gesture.jpg">
+				</button>
+			</div>
+			<div class = "hand-selection paper">
+				<button class="hand-pic player-pic" id="pick-paper">
+					paper
+					<img id="player-paper-pic" src="images/players_paper_gesture.jpg">
+				</button>
+			</div>
+			<div class="hand-selection scissors">
+				<button class="hand-pic player-pic" id="pick-scissors">
+					scissors
+					<img id="player-scissors-pic" src="images/players_scissor_gesture.jpg">
+				</button>
+			</div>
+		</div>
+		<div id="center-action">
+			<div id="round">Round 1 of 5
+			</div>
+			<div id="play-button-wrapper">
+				<button id="play-round">
+					Shoot!
+				</button>
+			</div>
+		</div>
+		<div class="zones" id="computer-zone">
+			<h2 class="player-title">Computer</h2>
+			<div class ="hand-selection rock">
+				<button class="hand-pic" id="pick-rock">
+					rock
+					<img id="computer-rock-pic" src="images/computers_rock_gesture.jpg">
+				</button>
+			</div>
+			<div class="hand-selection paper">
+				<button class="hand-pic" id="pick-paper">
+					paper
+					<img id="computer-paper-pic" src="images/computers_paper_gesture.jpg">
+				</button>
+			</div>
+			<div class="hand-selection scissors">
+				<button class="hand-pic" id="pick-scissors">
+					scissors
+					<img id="computer-scissors-pic" src="images/computers_scissor_gesture.jpg">
+				</button>
+			</div>
+		</div>
+		<div id="footer">
+			<div class = "score">
+				<h4 class="score-tab" id="score-title">- score -</h4>
+				<span class="score-tab" id="your-score">You | </span>
+				<span class="score-num" id="p-score">0</span>
+				<span class="score-tab" id="computer-score">Computer | </span>
+				<span class="score-num" id="c-score">0</span>
+			</div>
+		</div>
+	</div>
+<script type="Text/JavaScript" src="RPS_pt2.js"></script>
+</body>
+</html>

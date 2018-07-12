@@ -1,0 +1,365 @@
+body{
+	position: relative;
+	height: auto;
+	width: auto;
+	margin: 0;
+	z-index: -2;
+	background-image: url("images/chalkboard_texture.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 120%;
+}
+
+tab{
+	padding-left: 1.0em;
+}
+
+#frame{
+	margin: 20px;
+	height: auto;
+	width: auto;
+	position: relative;
+	background-color: #CBF2DEB3;
+	border: 2px solid #F7F7F7;
+	z-index: -1;
+	padding: 40px;
+	border-radius: 12px;
+}
+
+#main-title{
+	background-image: url("images/chalkboard_texture.jpg");
+	background-repeat: no-repeat;
+	background-size: 1200px 600px;
+	background-position: center;
+	background-color: #efefef;
+	margin: 10px 0 0 0 ;
+	padding: 40px 0 0 0;
+	text-align: center;
+	font-size: 64px;
+	font-family: Arial, sans-serif;
+	font-weight: 300;
+	color: #d2ddd6;
+	text-shadow: 2px 4px #1e1e1e;
+	border-top-style: solid;
+	border-left-style: solid;
+	border-right-style: solid;
+	border-width: 1px;
+	border-color: #DDDDDD;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom: 1px dashed #FFFFFF;
+	border-width: 3px;
+	box-shadow: 0px 2px 0px 0px #BBBBBB;
+	position: relative;
+	height: 120px;
+	width: 60%;
+	left: 20%;
+}
+
+#frame-shadow{
+	margin: 1px;
+	border: 4px solid red;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	background-color: transparent;
+	border: none;
+	box-shadow: 5pt 5pt 2pt 2pt #b9aebf;
+	z-index: -2;	
+}
+
+.player-title{
+	text-align: center;
+	font-family: Arial, sans-serif;
+	font-size: 42px;
+	font-weight: 400;
+	color: #190f4d;
+	margin: 0 0 10px 0;
+	padding-top: 10px;
+}
+
+.zones{
+	height: auto;
+	width: auto;
+	padding: 15px 10px 0px 10px;
+	margin-top: 80px;
+	border: 3px dashed #EEEEEE;
+	border-radius: 3px;
+	background-color: #d2f2f2;
+
+}
+
+#player-zone{
+	position: relative;
+	height: auto;
+	width: auto;
+	display: inline-block;
+	margin-left: 10px;
+	text-align: left;
+	box-shadow: 6px 6px 20px 6px #564444;
+}
+
+#player-zone:hover{
+	transition: 0.1s;
+	box-shadow: 6px 6px 20px 8px #4e3939;
+}
+
+.choice-made{
+	transition: .2s ease;
+	background: #a0b6b6;
+}
+
+#pick-rock{
+	border: 2px solid #B2AEF1;
+	height: auto;
+	border-radius: 40px;
+	width: 335px;
+	z-index: 2;
+	background-color: white;
+}
+
+#pick-paper{
+	border: 2px solid #B2AEF1;
+	height: auto;
+	border-radius: 40px;
+	width: 335px;
+	z-index: 3;
+	background-color: white;
+}
+
+#pick-scissors{
+	border: 2px solid #B2AEF1;
+	height: auto;
+	border-radius: 40px;
+	width: 335px;
+	z-index: 2;
+	background-color: white;
+}
+
+.clicked{
+	transition: all .2s ease;
+	transform: scale(1.2, 1.2);
+	box-shadow: 0px 4px 6px 1px #564444;
+	opacity: 1;
+}
+
+
+#center-action{
+	position: relative;
+	display: inline-block;
+	height: 850px;
+	width: 490px;
+	background: gray;
+	left: 91px;
+	margin-right: auto;
+	margin-bottom: 0;
+	top: 70px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border: 4px double white;
+	border-width: 6px;
+	box-shadow: 0px 3px 5px 2px #555555;
+}
+
+#round{
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    font-size: 54px;
+    font-family: Arial, sans-serif;
+    top: 140px;
+    font-weight: 700;
+    color: #EEEEEE;
+}
+
+#play-button-wrapper{
+	position: absolute;
+	margin-left: 43px;
+	margin-right: 43px;
+	margin-top: 320px;
+	height: 300px;
+	width: 400px;
+	background: #dd4848;
+	text-align: center;
+	border: 2px dashed #DDDDDD;
+	border-radius: 10px;
+}
+
+#play-round{
+	height: 96%;
+	width: 96%;
+	border: 2px dashed #DDDDDD;
+	background: #dd4848;
+	margin-top: 6px;
+	border-radius: 10px;
+	font-family: Arial, sans-serif;
+	font-size: 48px;
+	color: #b83232;
+	text-shadow: 0px 2px 1px #ef7a7a;
+}
+
+#play-round:hover{
+	border: 2px solid #CCCCCC;
+	cursor: pointer;
+	color: #EEEEEE;
+	transition: 0.18s;
+	background-color: #d62d2d;
+	text-shadow: 0px 2px 1px #8c2828;
+}
+
+#computer-zone{
+	position: relative;
+	display: inline-block;
+	text-align: right;
+	padding: 10px;
+	left: 170px;
+	box-shadow: -6px 6px 20px 6px #564444;
+}
+
+.bg-computer-choices{
+	border: 2px solid #B2AEF1;
+	width: 335px;
+	height: auto;
+	border-radius: 40px;
+	z-index: 2;
+	background-color: white;
+
+}
+
+.hand-pic{
+	position: relative;
+	height: 20%;
+	width: auto;
+	margin: 30px;
+	padding: 20px;
+	opacity: 0.70;
+	font-size: 18px;
+}
+
+.player-pic:hover{
+	cursor: pointer;
+	transition: 0.3s;
+	opacity: 1.0;
+}
+
+
+#player-rock-pic{
+	position: relative;
+	display: inline;
+	width: 100%;
+	height: auto;
+}
+
+#player-paper-pic{
+	position: relative;
+	display: inline;
+	width: 100%;
+	height: auto;
+	z-index: 2;
+}
+
+#player-scissors-pic{
+	position: relative;
+	display: inline;
+	width: 100%;
+	height: auto;
+}
+
+#computer-rock-pic{
+	position: relative;
+	display: inline;
+	width: 100%;
+	height: auto;
+}
+
+#computer-paper-pic{
+	position: relative;
+	display: inline;
+	width: 100%;
+	height: auto;
+}
+
+#computer-scissors-pic{
+	position: relative;
+	display: inline;
+	width: 100%;
+	height: auto;
+}
+
+#footer{
+
+}
+
+.score{
+	position: fixed;
+	bottom: 0;
+	right: 35%;
+	height: 90px;
+	width: 500px;
+	background-image: url("images/chalkboard_texture.jpg");
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #CCC9ED;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	margin: auto;
+	border: 2px dashed #EEEEEE;
+	border-bottom: none;
+}
+
+.score-tab{
+	font-family: Arial, sans-serif;
+	font-weight: 200;
+	color: #d2ddd6;
+}
+
+.score-num{
+	position: absolute;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	font-family: Arial, sans-serif;
+	color: #EEEEEE;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+#p-score{
+	bottom: 36px;
+	left: 260px;
+}
+
+#c-score{
+	bottom: 14px;
+	left: 260px;
+}
+
+#score-title{
+	margin: 2px 0 5px 0;
+	text-align: center;
+	font-size: 20px;
+	font-style: italic;
+}
+
+#your-score{
+	margin: 0;
+	display: block;
+	width: 50%;
+	text-align: right;
+	font-size: 18px;
+}
+
+#computer-score{
+	margin: 0;
+	display: block;
+	width: 50%;
+	text-align: right;
+	font-size: 18px
+}
+
+.score-updated{
+	transition: 1s ease;
+	color: yellow;
+}
